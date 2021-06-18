@@ -13,3 +13,6 @@ steps:
   commands:
   - npm install
   - npm test
+
+node:
+  mac: a
