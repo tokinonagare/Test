@@ -1,0 +1,10 @@
+kind: pipeline
+name: default
+
+steps:
+- name: mac-test
+  commands:
+    - ls -al
+
+node:
+  mac: a
