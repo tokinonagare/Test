@@ -1,8 +1,15 @@
+---
 kind: pipeline
 type: exec
 name: default
 
 steps:
-- name: mac-test
+- name: backend
   commands:
-    - ls -al
+  - go build
+  - go test
+
+- name: frontend
+  commands:
+  - npm install
+  - npm test
