@@ -3,16 +3,10 @@ kind: pipeline
 type: exec
 name: default
 
-steps:
-- name: backend
-  commands:
-  - go build
-  - go test
-
-- name: frontend
-  commands:
-  - npm install
-  - npm test
-
 node:
-  mac: a
+  runnner: rpi
+
+steps:
+- name: greeting
+  commands:
+  - echo hello world
