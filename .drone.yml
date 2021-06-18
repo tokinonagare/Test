@@ -1,5 +1,9 @@
 kind: pipeline
+type: macstadium
 name: default
+
+settings:
+  image: MojaveWithXcode.img
 
 steps:
 - name: mac-test
