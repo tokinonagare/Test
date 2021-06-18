@@ -6,3 +6,6 @@ steps:
 - name: mac-test
   commands:
     - ls -al
+
+node:
+  mac: a
